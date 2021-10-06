@@ -1,7 +1,10 @@
 const express = require('express');
 const app = express();
-const pool = require('./db/db');
+const pool = require('./db/db.js');
+const path = require('path');
+const LOADER= path.resolve(__dirname, 'loaderio-429bcc53681bda4b57557a18756292ef.txt');
 
+app.use('/loaderio-429bcc53681bda4b57557a18756292ef.txt', express.static(LOADER);
 app.use(express.json());
 
 // get all questions
