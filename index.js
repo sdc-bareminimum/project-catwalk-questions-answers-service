@@ -1,12 +1,11 @@
 require('newrelic');
-const compression = require('compression');
 const express = require('express');
 const app = express();
 const pool = require('./db/db.js');
 const path = require('path');
 const LOADER= path.resolve(__dirname, 'loaderio-e6f0c1ed95cffdb0ec54deea46688717.txt');
 
-app.use(compression());
+
 app.use('/loaderio-e6f0c1ed95cffdb0ec54deea46688717.txt', express.static(LOADER));
 app.use(express.json());
 
