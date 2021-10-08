@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sdc-bareminimum/project-catwalk-questions-answers-service#readme",
   "dependencies": {
+    "compression": "^1.7.4",
     "csv": "^5.5.3",
     "csv-writer": "^1.6.0",
     "dotenv": "^10.0.0",
